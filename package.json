@@ -33,6 +33,7 @@
     "clsx": "1.1.1",
     "fake-indexeddb": "3.1.7",
     "firebase": "8.3.3",
+    "gh-pages": "3.2.3",
     "i18next-browser-languagedetector": "6.1.2",
     "idb-keyval": "6.0.3",
     "image-blob-reduce": "3.0.1",
@@ -89,6 +90,7 @@
   "prettier": "@excalidraw/prettier-config",
   "private": true,
   "scripts": {
+    "deploy": "gh-pages -d build",
     "build-node": "node ./scripts/build-node.js",
     "build:app:docker": "REACT_APP_DISABLE_SENTRY=true react-scripts build",
     "build:app": "REACT_APP_GIT_SHA=$VERCEL_GIT_COMMIT_SHA react-scripts build",
