@@ -56,7 +56,13 @@
 
     <!-- Excalidraw version -->
     <meta name="version" content="{version}" />
-
+    <link
+      rel="preload"
+      href="YangRenDongZhuShiTi-Regular-2.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
     <link
       rel="preload"
       href="Virgil.woff2"
@@ -120,7 +126,8 @@
         width: 1px;
         overflow: hidden;
         clip: rect(1px, 1px, 1px, 1px);
-        white-space: nowrap; /* added line */
+        white-space: nowrap;
+        /* added line */
         user-select: none;
       }
 
@@ -144,6 +151,7 @@
         color: var(--popup-text-color);
         font-size: 1.3em;
       }
+
       #root {
         height: 100%;
         -webkit-touch-callout: none;
